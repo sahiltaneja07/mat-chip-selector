@@ -28,7 +28,7 @@ import {
   Settings,
   Users,
 } from 'lucide-react';
-import type { SelectOption } from '../models/index.model';
+import type { SelectOption } from '../MatChipsSelector/models/SelectOption.model';
 
 const theme = createTheme({
   palette: {
