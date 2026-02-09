@@ -1,6 +1,7 @@
 import { Chip, Box } from '@mui/material';
 import { motion } from 'framer-motion';
 import type { ChipDisplayProps } from '../../models';
+import './ChipDisplay.scss';
 
 export const ChipDisplay = ({
   option,
@@ -15,6 +16,7 @@ export const ChipDisplay = ({
 }: ChipDisplayProps) => {
   return (
     <Box
+      className="chip"
       component={motion.div}
       initial={{ scale: 0.8, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
@@ -22,6 +24,7 @@ export const ChipDisplay = ({
       transition={{ duration: 0.2, ease: 'easeOut' }}
     >
       <Chip
+        className={`chip-element ${disabled ? 'chip-disabled' : ''}`}
         label={option.label}
         onDelete={disabled ? undefined : onDelete}
         onClick={onClick}
@@ -31,21 +34,6 @@ export const ChipDisplay = ({
         size={size}
         avatar={option.icon ? <>{option.icon}</> : undefined}
         deleteIcon={deleteIcon as React.ReactElement | undefined}
-        sx={{
-          cursor: disabled ? 'default' : 'pointer',
-          transition: 'all 0.2s ease',
-          '&:hover': {
-            boxShadow: disabled ? 'none' : '0 2px 8px rgba(0,0,0,0.15)',
-            transform: disabled ? 'none' : 'translateY(-1px)',
-          },
-          '& .MuiChip-deleteIcon': {
-            transition: 'all 0.2s ease',
-            '&:hover': {
-              color: 'inherit',
-              transform: 'scale(1.1)',
-            },
-          },
-        }}
         {...chipProps}
       />
     </Box>

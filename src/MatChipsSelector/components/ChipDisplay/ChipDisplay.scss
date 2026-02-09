@@ -1,0 +1,25 @@
+.chip {
+  cursor: pointer;
+
+  .chip-disabled {
+    cursor: default;
+  }
+
+  .chip-element {
+    transition: all 0.2s ease;
+
+    &:hover:not(.chip-disabled) {
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transform: translateY(-1px);
+    }
+
+    .MuiChip-deleteIcon {
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: inherit;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
