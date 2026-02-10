@@ -136,8 +136,8 @@ export const Index = () => {
           <Box sx={{ textAlign: 'center', mb: 6 }}>
             <Stack direction="row" spacing={1} justifyContent="center" sx={{ mb: 2 }}>
               <Chip label="v1.0.0" size="small" color="primary" />
-              <Chip label="MUI 5+" size="small" variant="outlined" />
-              <Chip label="React 18+" size="small" variant="outlined" />
+              <Chip label="MUI 7+" size="small" variant="outlined" />
+              <Chip label="React 19+" size="small" variant="outlined" />
             </Stack>
             <Typography
               variant="h2"
