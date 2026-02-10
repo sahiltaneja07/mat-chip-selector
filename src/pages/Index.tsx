@@ -167,7 +167,7 @@ export const Index = () => {
                 label="View on GitHub"
                 clickable
                 component="a"
-                href="https://github.com"
+                href="https://github.com/sahiltaneja07/mat-chip-selector"
                 target="_blank"
                 sx={{ px: 1 }}
               />
@@ -268,12 +268,6 @@ export const Index = () => {
                 </Typography>
               </Paper>
             ))}
-          </Box>
-
-          <Box sx={{ textAlign: 'center', pt: 4 }}>
-            <Typography variant="body2" color="text.secondary">
-              Built with ❤️ using React + MUI + Framer Motion
-            </Typography>
           </Box>
         </Container>
       </Box>
