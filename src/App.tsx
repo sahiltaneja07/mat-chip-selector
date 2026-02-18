@@ -15,8 +15,8 @@ function App() {
           element={
             <ChipDisplay
               option={{ label: "Test Label", icon: null, value: "test" }}
-              onDelete={() => console.log("Deleted")}
-              onClick={() => console.log("Clicked")}
+              onDelete={() => console.log("deleted")}
+              onClick={() => console.log("clicked")}
               disabled={false}
               color="primary"
               variant="filled"
